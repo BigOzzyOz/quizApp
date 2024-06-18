@@ -3,7 +3,9 @@
   padding: 0;
 }
 
-body {}
+body {
+  background-color: rgb(127, 255, 0) !important;
+}
 
 .container {
   background-color: rgb(127, 255, 0) !important;
@@ -11,6 +13,25 @@ body {}
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+.questionFooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.answer:hover {
+  border: 1px solid rgba(127, 255, 0, 1);
+  background-color: rgba(127, 255, 0, 0.1);
+  cursor: pointer;
+}
+
+.bg-success,
+.bg-danger {
+  color: white !important;
 }
