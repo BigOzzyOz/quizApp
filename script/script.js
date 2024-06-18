@@ -1,5 +1,6 @@
 let currentQuestion = 1;
 let rightAnswer = 0;
+let AUDIO_END = new Audio('assets/audio/test.mp3');
 
 function init() {
   document.getElementById('questionsLength').innerHTML = questions.length;
@@ -49,6 +50,7 @@ function nextQuestion() {
 }
 
 function showSummary() {
+  AUDIO_END.play();
   document.getElementById('containerQuiz').classList.add('d-none');
   document.getElementById('containerSummary').classList.remove('d-none');
   document.getElementById('rightAnswer').innerHTML = rightAnswer;
